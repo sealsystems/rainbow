@@ -60,7 +60,7 @@ setInterval(() => {
     leds.setPixel(i, red, green, blue, brightness);
   }
 
-	offset += 2;
+  offset += 2;
   leds.sendUpdate();
 }, 1000 / 30);
 

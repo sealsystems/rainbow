@@ -1,0 +1,48 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/stefan/.nvm/versions/node/v6.9.1/bin/node',
+1 verbose cli   '/Users/stefan/.nvm/versions/node/v6.9.1/bin/npm',
+1 verbose cli   'run',
+1 verbose cli   'release-major' ]
+2 info using npm@3.10.8
+3 info using node@v6.9.1
+4 verbose run-script [ 'prerelease-major', 'release-major', 'postrelease-major' ]
+5 info lifecycle plossys-rainbow@0.2.0~prerelease-major: plossys-rainbow@0.2.0
+6 silly lifecycle plossys-rainbow@0.2.0~prerelease-major: no script for prerelease-major, continuing
+7 info lifecycle plossys-rainbow@0.2.0~release-major: plossys-rainbow@0.2.0
+8 verbose lifecycle plossys-rainbow@0.2.0~release-major: unsafe-perm in lifecycle true
+9 verbose lifecycle plossys-rainbow@0.2.0~release-major: PATH: /Users/stefan/.nvm/versions/node/v6.9.1/lib/node_modules/npm/bin/node-gyp-bin:/Users/stefan/code/sealsystems/rainbow/node_modules/.bin:/Users/stefan/.nvm/versions/node/v6.9.1/bin:/usr/local/bin:/Users/stefan/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/go/bin:/usr/local/MacGPG2/bin:/Users/stefan/go/bin
+10 verbose lifecycle plossys-rainbow@0.2.0~release-major: CWD: /Users/stefan/code/sealsystems/rainbow
+11 silly lifecycle plossys-rainbow@0.2.0~release-major: Args: [ '-c', 'bot release --type major' ]
+12 silly lifecycle plossys-rainbow@0.2.0~release-major: Returned: code: 1  signal: null
+13 info lifecycle plossys-rainbow@0.2.0~release-major: Failed to exec release-major script
+14 verbose stack Error: plossys-rainbow@0.2.0 release-major: `bot release --type major`
+14 verbose stack Exit status 1
+14 verbose stack     at EventEmitter.<anonymous> (/Users/stefan/.nvm/versions/node/v6.9.1/lib/node_modules/npm/lib/utils/lifecycle.js:255:16)
+14 verbose stack     at emitTwo (events.js:106:13)
+14 verbose stack     at EventEmitter.emit (events.js:191:7)
+14 verbose stack     at ChildProcess.<anonymous> (/Users/stefan/.nvm/versions/node/v6.9.1/lib/node_modules/npm/lib/utils/spawn.js:40:14)
+14 verbose stack     at emitTwo (events.js:106:13)
+14 verbose stack     at ChildProcess.emit (events.js:191:7)
+14 verbose stack     at maybeClose (internal/child_process.js:877:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+15 verbose pkgid plossys-rainbow@0.2.0
+16 verbose cwd /Users/stefan/code/sealsystems/rainbow
+17 error Darwin 16.4.0
+18 error argv "/Users/stefan/.nvm/versions/node/v6.9.1/bin/node" "/Users/stefan/.nvm/versions/node/v6.9.1/bin/npm" "run" "release-major"
+19 error node v6.9.1
+20 error npm  v3.10.8
+21 error code ELIFECYCLE
+22 error plossys-rainbow@0.2.0 release-major: `bot release --type major`
+22 error Exit status 1
+23 error Failed at the plossys-rainbow@0.2.0 release-major script 'bot release --type major'.
+23 error Make sure you have the latest version of node.js and npm installed.
+23 error If you do, this is most likely a problem with the plossys-rainbow package,
+23 error not with npm itself.
+23 error Tell the author that this fails on your system:
+23 error     bot release --type major
+23 error You can get information on how to open an issue for this project with:
+23 error     npm bugs plossys-rainbow
+23 error Or if that isn't available, you can get their info via:
+23 error     npm owner ls plossys-rainbow
+23 error There is likely additional logging output above.
+24 verbose exit [ 1, true ]
