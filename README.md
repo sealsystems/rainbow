@@ -45,7 +45,7 @@ docker service scale rainbow=3
 Rolling updates are [configured at start time](https://docs.docker.com/engine/swarm/swarm-tutorial/rolling-update/) by setting `--update-delay`:
 
 ```bash
-docker service create --name rainbow --update-delay 10s --mount type=bind,src=/sys,dst=/sys sealsystems/rainbow:0.1.0
+docker service create --name rainbow --update-delay 10s --mount type=bind,src=/sys,dst=/sys sealsystems/rainbow:0.2.0
 ```
 
 ```bash
