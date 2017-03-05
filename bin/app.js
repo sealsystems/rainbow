@@ -48,7 +48,7 @@ const wheel = function (pos) {
 
 init();
 
-const offset = 0;
+let offset = 0;
 
 setInterval(() => {
   /* eslint-disable one-var-declaration-per-line */
@@ -60,6 +60,7 @@ setInterval(() => {
     leds.setPixel(i, red, green, blue, brightness);
   }
 
+	offset += 2;
   leds.sendUpdate();
 }, 1000 / 30);
 
