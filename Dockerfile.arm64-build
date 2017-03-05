@@ -1,0 +1,7 @@
+FROM aarch64/node:6.9.1
+COPY qemu-aarch64-static /usr/bin/qemu-aarch64-static
+WORKDIR /code
+COPY package.json /code
+RUN npm install --production
+COPY . /code
+CMD ["node", "app.js"]

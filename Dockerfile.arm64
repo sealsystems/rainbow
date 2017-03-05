@@ -1,0 +1,5 @@
+FROM aarch64/node:6.9.1-slim
+COPY qemu-aarch64-static /usr/bin/qemu-aarch64-static
+WORKDIR /code
+COPY tmp/ /code
+CMD ["node", "bin/app.js"]

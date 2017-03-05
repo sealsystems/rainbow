@@ -1,0 +1,46 @@
+{
+  "name": "plossys-rainbow",
+  "description": "PLOSSYS rainbow",
+  "version": "0.1.0",
+  "author": {
+    "name": "SEAL Systems AG",
+    "email": "opensource@sealsystems.de",
+    "url": "https://www.sealsystems.de"
+  },
+  "license": "MIT",
+  "keywords": [
+    "rainbow",
+    "blinkt"
+  ],
+  "scripts": {
+    "bot": "bot",
+    "release": "bot release",
+    "release-minor": "bot release --type minor",
+    "release-major": "bot release --type major",
+    "test": "bot test-units",
+    "coverage": "istanbul cover _mocha -- --recursive --ui tdd ",
+    "report": "npm run coverage && if [[ $OSTYPE == darwin* ]]; then open=open; else open=xdg-open; fi && $open coverage/lcov-report/index.html"
+  },
+  "dependencies": {
+    "async": "2.1.5",
+    "debug": "^2.6.1",
+    "dockerode": "2.3.1",
+    "getenv": "0.7.0",
+    "node-blinkt": "sealsystems/node-blinkt#sysfs"
+  },
+  "devDependencies": {
+    "assertthat": "0.8.3",
+    "eslint-config-seal": "0.0.9",
+    "nodeenv": "0.2.1",
+    "proxyquire": "1.7.11",
+    "roboter": "0.14.4",
+    "roboter-server": "0.14.4"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sealsystems/seal-streamparser.git"
+  }
+}

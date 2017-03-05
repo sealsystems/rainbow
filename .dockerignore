@@ -1,0 +1,7 @@
+Dockerfile*
+LICENSE
+*.sh
+.dockerignore
+.gitignore
+.git/
+.travis.yml
