@@ -21,7 +21,7 @@ node bin/app.js
 To start the container, type:
 
 ```
-docker run -it -v /sys:/sys -v /var/run/docker.sock:/var/run/docker.sock sealsystems/rainbow
+docker run -it -v /sys:/sys sealsystems/rainbow
 ```
 
 ## Swarm mode
