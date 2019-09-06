@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "async": "2.1.5",
-    "debug": "^2.6.1",
+    "debug": "2.6.1",
     "dockerode": "2.3.1",
     "getenv": "0.7.0",
     "node-blinkt": "sealsystems/node-blinkt#sysfs"
