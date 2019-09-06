@@ -29,7 +29,7 @@
     "node-blinkt": "sealsystems/node-blinkt#sysfs"
   },
   "devDependencies": {
-    "assertthat": "0.8.3",
+    "assertthat": "4.0.2",
     "eslint-config-seal": "0.0.9",
     "nodeenv": "2.0.1",
     "proxyquire": "1.7.11",
