@@ -1,4 +1,4 @@
-FROM node:6.11.2
+FROM node:15.3.0-alpine
 
 WORKDIR /code
 COPY package.json /code
