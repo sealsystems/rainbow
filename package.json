@@ -31,7 +31,7 @@
   "devDependencies": {
     "assertthat": "5.2.5",
     "eslint-config-seal": "0.0.9",
-    "nodeenv": "3.0.33",
+    "nodeenv": "3.0.34",
     "proxyquire": "2.1.3",
     "roboter": "0.14.4",
     "roboter-server": "0.14.4"
