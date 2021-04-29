@@ -1,0 +1,71 @@
+version: 2
+registries:
+  npm-registry-npm-pkg-github-com:
+    type: npm-registry
+    url: https://npm.pkg.github.com
+    token: "${{secrets.NPM_REGISTRY_NPM_PKG_GITHUB_COM_TOKEN}}"
+
+updates:
+- package-ecosystem: docker
+  directory: "/"
+  schedule:
+    interval: weekly
+    time: "00:00"
+  open-pull-requests-limit: 99
+  ignore:
+  - dependency-name: node
+    versions:
+    - 15.10.0.pre.alpine
+    - 15.11.0.pre.alpine
+    - 15.12.0.pre.alpine
+    - 15.13.0.pre.alpine
+    - 15.6.0.pre.alpine
+    - 15.7.0.pre.alpine
+    - 15.8.0.pre.alpine
+    - 15.9.0.pre.alpine
+  commit-message:
+    prefix: chore
+    include: scope
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "00:00"
+  open-pull-requests-limit: 99
+  versioning-strategy: increase
+  allow:
+  - dependency-name: seal-*
+  - dependency-name: "@sealsystems/*"
+  - dependency-type: development
+  ignore:
+  - dependency-name: roboter
+    versions:
+    - "> 0.14.4"
+  - dependency-name: roboter-server
+    versions:
+    - "> 0.14.4"
+  - dependency-name: nodeenv
+    versions:
+    - 3.0.39
+    - 3.0.40
+    - 3.0.41
+    - 3.0.42
+    - 3.0.43
+    - 3.0.44
+    - 3.0.45
+    - 3.0.46
+    - 3.0.47
+    - 3.0.48
+    - 3.0.49
+    - 3.0.50
+    - 3.0.51
+    - 3.0.52
+  - dependency-name: assertthat
+    versions:
+    - 5.2.6
+    - 5.2.7
+  commit-message:
+    prefix: chore
+    include: scope
+  registries:
+  - npm-registry-npm-pkg-github-com
