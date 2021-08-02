@@ -1,4 +1,4 @@
-FROM node:6.11.2
+FROM node:16.6.0
 
 WORKDIR /code
 COPY package.json /code
